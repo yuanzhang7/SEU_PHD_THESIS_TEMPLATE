@@ -1,6 +1,10 @@
 # 东南大学博士论文LaTeX模板
 本项目是东南大学博士论文LaTeX模板，包含完整的博士论文格式、排版、以及东南大学研究生学位论文格式规定，写于2026年9月。
 
+<p align="center">
+<img src="template_figures/example.png" alt="东南大学博士论文模板封面预览" width="800">
+</p>
+
 ## 目录结构
 ```text
 sample_phd.tex          主文件
