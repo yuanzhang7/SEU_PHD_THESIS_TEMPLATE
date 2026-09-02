@@ -1,0 +1,60 @@
+\documentclass[nomlist,phd,AutoFakeBold]{seuthesix}
+
+\usepackage{ragged2e}
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{placeins}
+
+\setlength{\emergencystretch}{2em}
+
+\begin{document}
+
+\categorynumber{*}
+\UDC{*}
+\secretlevel{公开}
+\studentid{学号}
+\title{中文论文题目}{}{English Thesis Title}{}
+\author{作者姓名}{Author Name}
+\advisor{导师姓名}{教授}{Advisor Name}{Prof.}
+% \coadvisor{合作导师姓名}{教授}{Co-advisor Name}{Prof.}
+\degreetype{工学博士}{Doctor of Philosophy}
+\major{一级学科名称}
+\submajor{}
+\defenddate{答辩日期}
+\authorizedate{}
+\committeechair{答辩委员会主席}
+\reviewer{盲审}{}
+\department{学院中文名称}{School English Name}
+
+\makebigcover
+\makecover
+
+\begin{abstract}{关键词一，关键词二，关键词三}
+这里填写中文摘要。
+\end{abstract}
+
+\begin{englishabstract}{Keyword one, Keyword two, Keyword three}
+Here is the English abstract.
+\end{englishabstract}
+
+\setnomname{缩略词表}
+\tableofcontents
+\input{tex/terms}
+\listofothers
+
+\mainmatter
+\input{tex/chapter01_introduction}
+\input{tex/chapter02_related_work}
+\input{tex/chapter03_research_content_1}
+\input{tex/chapter04_research_content_2}
+\input{tex/chapter05_research_content_3}
+\input{tex/chapter06_conclusion}
+
+\thesisbib{references}
+
+\appendix
+\input{tex/acknowledgement}
+
+\end{document}
