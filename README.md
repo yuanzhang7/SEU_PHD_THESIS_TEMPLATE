@@ -40,5 +40,5 @@ seuthesix.bst           参考文献样式
 ⭐点个Star让下一个焦虑的博士生找到它。
 
 ## 致谢
-本模板感谢东南大学毕业的Dr.Yuan Zhang, Dr.Yuting He, Dr.Xinyu Wu.
+本模板感谢东南大学毕业的Dr. Yuan Zhang, Dr. Yuting He, Dr. Xinyu Wu.
 

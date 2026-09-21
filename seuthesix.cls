@@ -123,16 +123,6 @@ listtablename={表格目录}
  menucolor=red,
  urlcolor=magenta
 }
-\AtEndDocument{\backcover}
-\newcommand{\backcover}{
-\clearpage\thispagestyle{empty}\cleardoublepage\mbox{ }
-\clearpage\thispagestyle{empty} %backcover always at even page.
-\begin{picture}(0,0)
- \put(-1,-22){ %
-\includegraphics[width=\textwidth]{template_figures/back-cover.png}}
-\end{picture}
-}
-
 \RequirePackage[top=1.2in,bottom=1in,left=2.5cm,right=2.5cm,a4paper]{geometry}
 \RequirePackage{fancyhdr}
 \fancypagestyle{seustyle}{%
@@ -395,96 +385,7 @@ listtablename={表格目录}
    pdfcreator={xetex}
  }
 
-\thispagestyle{empty}
-\AddToShipoutPictureFG*{\setlength{\unitlength}{1cm}\put(1,26){%
-\renewcommand{\arraystretch}{1.0}
-   \begin{tabular}{l}
-     \CoverTopOption{\schoolcodepre}{\schoolcode} \\
-     \CoverTopOption{\categorynumberpre}{\@categorynumber} \\
-     \CoverTopOption{\secretlevelpre}{\@secretlevel}\\
-     \CoverTopOption{U D C}{\@UDC} \\
-     \CoverTopOption{\studentidpre}{\@studentid}
-   \end{tabular}
-}
-}
-
-\AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(0,23){%
-\parbox{\paperwidth}{\centering\includegraphics[width=\paperwidth]{template_figures/front-cover.jpg}}}}%
-
-   \ifengineering
-\AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(0,18){ %
-\parbox{\paperwidth}{\centering\includegraphics[scale=0.65]{template_figures/engineering.png}}}}%
-   \else \ifmasters
-\AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(0,18){ %
-\parbox{\paperwidth}{\centering\includegraphics[scale=1.1]{template_figures/master-hwzs.pdf}}}}%
-   \else \ifphd
-   \AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(0,18){ %
-\parbox{\paperwidth}{\centering\includegraphics[scale=1.1]{template_figures/doctor-hwzs.pdf}}}}%
-   \else
-   \ClassError{seuthesix}{invalid degree type option.}%
-   {Check your class option of degree type to be one of the following:%
-   masters, engineering, phd.}
-   \fi
-   \fi
-   \fi
-\AddToShipoutPictureBG*{\setlength{\unitlength}{1cm}\put(17,27){%
-\parbox{\paperwidth}{\includegraphics[width=2cm]{template_figures/seu-color-logo.png}}}}%
-
-   \vspace*{8cm}
-
-   \begin{center}
-     \linespread{1.25}
-     \yihao\heiti\@title\\
-     \yihao\heiti\@subtitle
-   \end{center}
-
-   \begin{center}
-    \setlength{\tabcolsep}{0pt}
-    \renewcommand{\arraystretch}{2.0}
-     \begin{tabular}{cr}
-       \makebox[3.5cm][s]{\xiaoerhao\songti\authorpre: } &
-       \underline{\makebox[6cm][s]{
-           \hspace*{1cm}
-           \makebox[2.5cm][c]{\xiaoerhao\heiti\@author}
-           \makebox[2cm][r]{}}} \\
-       \makebox[3.5cm][s]{\xiaoerhao\songti\advisorpre: } &
-       \underline{\makebox[6cm][s]{
-           \hspace*{1cm}
-           \makebox[2.5cm][c]{\xiaoerhao\heiti\@advisorname}
-           \makebox[2cm][r]{\xiaoerhao\heiti\@advisortitle}}}
-       \\
-       &
-       \ifcoadvisor
-       \underline{\makebox[6cm][s]{
-           \hspace*{1cm}
-           \makebox[2.5cm][c]{\xiaoerhao\heiti\@coadvisorname}
-           \makebox[2cm][r]{\xiaoerhao\heiti\@coadvisortitle}}}
-       \else
-       \fi \\
-     \end{tabular}
-   \end{center}
-
-   \begin{center}
-   \setlength{\tabcolsep}{10pt}
-    \renewcommand{\arraystretch}{2.0}
-     \begin{tabular}{ll}
-       \CoverBottomOption{\appdegreepre}{\@degreetype} &
-       \CoverBottomOption{\authorizeorganizationpre}{\@authorizeorganization} \\
-       \CoverBottomOption{\majorpre}{\@major} &
-       \CoverBottomOption{\defenddatepre}{\@defenddate}\\
-       \CoverBottomOption{\submajorpre}{\@submajor} &
-       \CoverBottomOption{\authorizedatepre}{\@authorizedate}\\
-       \CoverBottomOption[4.05cm]{\committeechairpre}{\@committeechair} &
-       \CoverBottomOption{\reviewerpre}{\@reviewerA}\\
-       & \CoverBottomOption{\makebox[2.55cm]{}}{\@reviewerB}
-     \end{tabular}
-   \end{center}
-
-   \vfill
-   \setcounter{page}{1}
-{\songti\sihao\centerline{\today} \par}
-
- \clearpage\thispagestyle{empty}\cleardoublepage%
+\setcounter{page}{3}
  \thispagestyle{empty}
  \begin{center}
    \xiaochuhao
