@@ -10,7 +10,15 @@
 sample_phd.tex          主文件
 sample_phd.pdf          博士论文pdf
 figure/                 博士论文图像库
-tex/                    博士论文章节文件
+tex/                    博士论文内容文件
+  terms.tex             缩略词表
+  chapter01_introduction.tex       绪论
+  chapter02_related_work.tex       相关理论与技术基础
+  chapter03_research_content_1.tex 研究内容一
+  chapter04_research_content_2.tex 研究内容二
+  chapter05_research_content_3.tex 研究内容三
+  chapter06_conclusion.tex         总结与展望
+  acknowledgement.tex   致谢
 references.bib          参考文献库
 东南大学研究生学位论文格式规定.pdf
 template_figures/       封面和校徽等模板资源
